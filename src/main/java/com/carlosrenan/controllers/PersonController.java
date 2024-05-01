@@ -19,8 +19,7 @@ public class PersonController {
 	@Autowired
 	private PersonServices service;
 	
-	@RequestMapping(value = "/",
-			method=RequestMethod.GET,
+	@RequestMapping(method=RequestMethod.GET,
 			produces = MediaType.APPLICATION_JSON_VALUE)
 	public List<Person>findAll() throws Exception{
 		
