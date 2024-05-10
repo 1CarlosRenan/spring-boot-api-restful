@@ -1,10 +1,7 @@
 package com.carlosrenan.repositories;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
 
 import com.carlosrenan.model.Person;
 
-
-@Repository
 public interface PersonRepository extends JpaRepository<Person, Long> {}
